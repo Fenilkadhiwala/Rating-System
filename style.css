@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+.box-container {
+    background-color: white;
+    width: 400px;
+    height: 200px;
+    position: relative;
+    border-radius: 18px;
+    box-shadow: 10px 15px 5px black;
+    -webkit-border-radius: 18px;
+    -moz-border-radius: 18px;
+    -ms-border-radius: 18px;
+    -o-border-radius: 18px;
+}
+
+.emoji-container {
+    position: absolute;
+    top: 20%;
+    transform: translateX(-50%);
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    /*background-color: yellow;
+    */
+    border-radius: 50%;
+    display: flex;
+    overflow: hidden;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+.far {
+    margin: 1px;
+    transform: translateX(0px);
+    transition: transform 0.2s;
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    -o-transform: translateX(0px);
+    -webkit-transition: transform 0.2s;
+    -moz-transition: transform 0.2s;
+    -ms-transition: transform 0.2s;
+    -o-transition: transform 0.2s;
+}
+
+.star-container {
+    position: absolute;
+    bottom: 20%;
+    transform: translateX(50%);
+    -webkit-transform: translateX(50%);
+    -moz-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    -o-transform: translateX(50%);
+}
+
+.fas {
+    color: lightgray;
+    cursor: pointer;
+}
+
+.fas:hover {
+    color: gray;
+}
+
+.fas.active {
+    color: gold;
+}
